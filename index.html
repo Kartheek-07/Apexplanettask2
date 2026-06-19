@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ApexPlanet Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>ApexPlanet</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Grid Layout -->
+    <div class="container">
+        <div class="box">HTML</div>
+        <div class="box">CSS</div>
+        <div class="box">JavaScript</div>
+        <div class="box">Responsive Design</div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-container">
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <!-- To-Do List -->
+    <div class="todo-container">
+        <h2>To-Do List</h2>
+
+        <input type="text" id="taskInput" placeholder="Enter Task">
+        <button onclick="addTask()">Add Task</button>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

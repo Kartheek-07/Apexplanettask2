@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f4f4f4;
+}
+
+/* Flexbox Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077cc;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CSS Grid */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.box {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Contact Form */
+
+.form-container {
+    margin-top: 30px;
+}
+
+input {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* To-Do List */
+
+.todo-container {
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 15px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li {
+    margin-top: 10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav {
+        flex-direction: column;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 100%;
+    }
+}
